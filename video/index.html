@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>禁书目录</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>网页作者:
+	<a href="./to_kuhei.jsp">
+	Minecraftku_hei
+	</a>, <a href="./to_zhou2008.jsp">
+	zhou2008
+	</a></p>
+	<a href="./23/">av23</a>
+	<br/>
+	<a href="./10388/">av10388</a>
+	<br/>
+	<a href="./10492/">av10492</a>
+	<br/>
+	<a href="./11425/">av11425</a>
+	<br/>
+	<a href="./marenol/">marenol</a>
+	<br/>
+	<a href="./mopemope/">mopemope</a>
+	<br/>
+	<a href="./killyouinthreedays/">骨灰扬诺夫</a>
+	<br/>
+	<p>留言板:</p>
+	<form action="/api/sendComments.jsp" method="post">
+  		<textarea name="data"style="margin: 0px; width: 233.59px; height: 71px;" ></textarea>
+  		<p>用户名: <input type="text" name="username" id="username" /></p>
+  		<input type="submit" value="提交" />
+  		<a href="/video/comment.jsp">查看留言板内容</a>
+	</form>
+	<script>
+		function getCookie(cname) {
+    		var name = cname + "=";
+    		var decodedCookie = decodeURIComponent(document.cookie);
+    		var ca = decodedCookie.split(';');
+    		for(var i = 0; i <ca.length; i++) {
+        		var c = ca[i];
+        		while (c.charAt(0) == ' ') {
+         		   c = c.substring(1);
+        		 }
+        		 if (c.indexOf(name) == 0) {
+         		   return c.substring(name.length, c.length);
+        		 }
+     		}
+    		return "";
+		} 
+		document.getElementById("username").value=getCookie("username")
+	</script>
+	<hr/>
+	<p>
+	Powered by 
+	<a href="https://github.com/jabbany/ABPlayerHTML5">
+	ABPlayer
+	</a>, <a href="https://tomcat.apache.org/">
+	Tomcat
+	</a></p>
+	<p>免责声明：此网站里的所有视频均为网络素材,与网站作者无关.</p>
+	<p id="timer"></p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>av10492</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/video/css/base.min.css" />
+	<script src="/video/vendor/CommentCoreLibrary.min.js"></script>
+	<script src="/video/ABPlayerHTML5.min.js"></script>
+</head>
+<body>
+	<video id="player" src="./av10492.flv" autobuffer="true">请去找个支持html5的浏览器再打开</video>
+	<div id="my-player"></div>
+	<script type="text/javascript">
+		var inst = ABP.create( document.getElementById('my-player'), {
+  'src': {'playlist':[{'video':document.getElementById('player'),'comments':'av10492.xml'}]},
+  'width': 320,
+  'height': 240
+});
+//(new CommentLoader(inst.cmManager)).load('GET', 'http://mc.myunco.xyz:1337/mopemope.xml');
+
+	</script>
+<a href="https://www.google.cn/chrome/">没弹幕？</a>
+</body>
+</html>
